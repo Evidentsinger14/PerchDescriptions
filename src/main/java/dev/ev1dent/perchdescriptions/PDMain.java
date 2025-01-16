@@ -1,7 +1,7 @@
 package dev.ev1dent.perchdescriptions;
 
+import dev.ev1dent.perchdescriptions.commands.PerchCommand;
 import dev.ev1dent.perchdescriptions.papi.PDExpansion;
-import dev.ev1dent.perchdescriptions.utilities.ConfigManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -29,7 +29,6 @@ public final class PDMain extends JavaPlugin {
     }
 
     private void initializeConfig(){
-        ConfigManager cm = new ConfigManager();
-        cm.loadConfig();
+        saveDefaultConfig();
     }
 }
