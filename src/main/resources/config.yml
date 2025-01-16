@@ -1,0 +1,13 @@
+messages:
+  no-permissions: "<red>Error: <dark_red>You do not have permission to use that command."
+  player-not-found: "<red>Error: <dark_red>Player not found"
+
+  pronouns:
+    display: "<yellow>Your pronouns: %s"
+    set: "<yellow>Pronouns (%s) Set for %s (%s)"
+    not-set: "Not Set"
+
+  timezone:
+    display: "<yellow>Your timezone: %s"
+    set: "<yellow>Timezone (%s) Set for %s (%s)"
+    not-set: "Not Set"
