@@ -1,5 +1,6 @@
-package dev.ev1dent.perchdescriptions;
+package dev.ev1dent.perchdescriptions.utilities;
 
+import dev.ev1dent.perchdescriptions.PDMain;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.persistence.PersistentDataContainer;
@@ -33,7 +34,7 @@ public class PlayerManager {
                 if(container.has(pronouns, PersistentDataType.STRING)) {
                     return container.get(pronouns, PersistentDataType.STRING);
                 } else {
-                    return "Not Set";
+                    return pdMain().getConfig().getString("messages." + field + ".not-set");
                 }
 
             }
@@ -41,7 +42,7 @@ public class PlayerManager {
                 if(container.has(timezone, PersistentDataType.STRING)) {
                     return container.get(timezone, PersistentDataType.STRING);
                 } else {
-                    return "Not Set";
+                    return pdMain().getConfig().getString("messages." + field + ".not-set");
                 }
             }
         }
