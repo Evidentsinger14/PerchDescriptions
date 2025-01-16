@@ -1,0 +1,13 @@
+name: PerchDescriptions
+version: '${version}'
+main: dev.ev1dent.perchdescriptions.PDMain
+prefix: PerchDescriptions
+authors: [Ev1dent]
+depend:
+  - PlaceholderAPI
+api-version: '1.21'
+commands:
+  pronouns:
+    usage: '/<command> <player> <pronouns>'
+  timezone:
+    usage: '/<command> <player> <timezone>'
