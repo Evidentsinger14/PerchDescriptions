@@ -1,6 +1,6 @@
 package dev.ev1dent.perchdescriptions.papi;
 
-import dev.ev1dent.perchdescriptions.PlayerManager;
+import dev.ev1dent.perchdescriptions.utilities.PlayerManager;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
