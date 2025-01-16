@@ -21,7 +21,7 @@ public class PDExpansion extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getVersion() {
-        return "1.0.0";
+        return "1.0.1";
     }
     @Override
     public boolean persist() {
@@ -29,7 +29,7 @@ public class PDExpansion extends PlaceholderExpansion {
     }
 
     @Override
-    public String onPlaceholderRequest(Player player, String params) {
+    public String onPlaceholderRequest(Player player, @NotNull String params) {
         return playerManager.getField(player, params);
     }
 }
