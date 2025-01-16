@@ -18,13 +18,13 @@ public final class PDMain extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    public void registerCommands(){
+    private void registerCommands(){
         this.getCommand("pronouns").setExecutor(new PerchCommand());
         this.getCommand("timezone").setExecutor(new PerchCommand());
 
     }
 
-    public void initializeDependencies(){
+    private void initializeDependencies(){
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new PDExpansion().register();
         }
