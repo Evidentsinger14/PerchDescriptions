@@ -41,9 +41,9 @@ public class PerchCommand implements CommandExecutor {
         }
         try {
             playerManager.setField(player, baseCMD, args[1]);
-            field = playerManager.getField((Player) sender, baseCMD);
+            field = playerManager.getField(player, baseCMD);
 
-            player.sendMessage(Utils.formatConfigString("messages." + baseCMD + ".set", field, player.getName(), player.getUniqueId()));
+            sender.sendMessage(Utils.formatConfigString("messages." + baseCMD + ".set", field, player.getName(), player.getUniqueId()));
         } catch (Exception e) {
             e.printStackTrace();
         }
